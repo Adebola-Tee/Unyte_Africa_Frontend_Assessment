@@ -3,8 +3,7 @@ import { useParams } from "react-router-dom";
 import Slider from "react-slick";
 import Items from "../../../Utils/Items";
 import PrimaryBtn from "../../atoms/PrimaryBtn";
-import SecondaryBtn from "../../atoms/SecondaryBtn";
-import { FaLink, FaCode } from "react-icons/fa";
+import { FaLink} from "react-icons/fa";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import placeholderImage from "../../../assets/placeholder.jpg";
 
@@ -81,21 +80,13 @@ const ProductDetails = () => {
         </ul>
       </div>
       <div className="flex items-center mt-8">
-        <a href={item?.liveLink} className="mr-4" target="blank">
+        <a href={item?.cartLink} className="mr-4" target="blank">
           <PrimaryBtn>
-            <span>Visit Now</span>
+            <span>Add to cart</span>
             <span>
               <FaLink />
             </span>
           </PrimaryBtn>
-        </a>
-        <a href={item?.codeLink} target="blank">
-          <SecondaryBtn>
-            <span>Source Code</span>
-            <span>
-              <FaCode />
-            </span>
-          </SecondaryBtn>
         </a>
       </div>
     </div>

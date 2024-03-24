@@ -29,7 +29,7 @@ const Items = [
     description:
       "Frontend react-based Project",
     category: "Trouser",
-    liveLink: "https://space-tourism-alpha.vercel.app/",
+    cartLink: "",
     price: 59,
   },
   {
@@ -57,7 +57,7 @@ const Items = [
     description:
       "Discover the latest fashion trends without overspending or going beyond your budget to maintain a stylish appearance every day. Unyte has curated a wide collection of fashion products, including men's, women's, and kids' fashion, made from premium fabrics and available in stunning colors that align with the latest fashion trends and timeless designs.",
     category: "Trouser",
-    liveLink: "https://firebase-authentication-orcin.vercel.app/",
+    cartLink: "",
     price: 79,
   },
   {
@@ -92,7 +92,7 @@ const Items = [
     description:
       "The product size is measured by hand. There may be a difference of 1-3cm, which is in the normal range. Please judge the product size according to the size marked in the product link, instead of your own feelings based on the pictures. Since the same product can appear large or small due to the distance when taking the pictures.",
     category: "bag",
-    liveLink: "https://my-frontend-portfolio-gold.vercel.app/",
+    cartLink: "",
     price: 120,
   },
   {
@@ -124,7 +124,7 @@ const Items = [
     description:
       "Whether you're dressing for a corporate setting or a casual outing, the Bodycon Skirt from Unyte is a versatile piece that adds a touch of sophistication to any ensemble. Its timeless black color makes it a must-have in every lady's wardrobe, as it effortlessly complements various colors of shirts and tops, allowing you to create endless stylish combinations. Elevate your style game and flaunt your well-shaped body with this chic and versatile skirt from Unyte.",
     category: "skirt",
-    liveLink: "https://selectwithease-app.vercel.app/",
+    cartLink: "",
     price: 90,
   },
   {
@@ -148,7 +148,7 @@ const Items = [
     description:
       "leather shoesLeather shoes refer to the footwear that uses natural leather as the upper and leather or rubber, plastic, PU foam, PVC, etc. as the sole, and is processed by sewing, gluing or injection molding. Leather shoes are characterized by breathability, moisture absorption, and good hygienic performance.Thousands of years ago, human ancestors had the habit of wearing shoes, wrapping their feet with animal skins, from leather shoes to modern leather shoes, leather shoes have a very long history. In China, the production of modern leather shoes only has a history of more than 120 years, but because the shape, style, structure and wearing function of leather shoes are superior to other footwear, the production of leather shoes has developed rapidly. Today, leather shoes have become people's favorite footwear, one of the commodities that beautify people's lives, and a 'pivotal' product in clothing.",
     category: "personal",
-    liveLink: "https://selectwithease-app.vercel.app/",
+    cartLink: "",
     price: 110,
   },
   {
@@ -172,7 +172,7 @@ const Items = [
     description:
       "leather shoesLeather shoes refer to the footwear that uses natural leather as the upper and leather or rubber, plastic, PU foam, PVC, etc. as the sole, and is processed by sewing, gluing or injection molding. Leather shoes are characterized by breathability, moisture absorption, and good hygienic performance.Thousands of years ago, human ancestors had the habit of wearing shoes, wrapping their feet with animal skins, from leather shoes to modern leather shoes, leather shoes have a very long history. In China, the production of modern leather shoes only has a history of more than 120 years, but because the shape, style, structure and wearing function of leather shoes are superior to other footwear, the production of leather shoes has developed rapidly. Today, leather shoes have become people's favorite footwear, one of the commodities that beautify people's lives, and a 'pivotal' product in clothing.",
     category: "personal",
-    liveLink: "https://selectwithease-app.vercel.app/",
+    cartLink: "",
     price: 88.5,
   },
   {
@@ -196,7 +196,7 @@ const Items = [
     description:
       "leather shoesLeather shoes refer to the footwear that uses natural leather as the upper and leather or rubber, plastic, PU foam, PVC, etc. as the sole, and is processed by sewing, gluing or injection molding. Leather shoes are characterized by breathability, moisture absorption, and good hygienic performance.Thousands of years ago, human ancestors had the habit of wearing shoes, wrapping their feet with animal skins, from leather shoes to modern leather shoes, leather shoes have a very long history. In China, the production of modern leather shoes only has a history of more than 120 years, but because the shape, style, structure and wearing function of leather shoes are superior to other footwear, the production of leather shoes has developed rapidly. Today, leather shoes have become people's favorite footwear, one of the commodities that beautify people's lives, and a 'pivotal' product in clothing.",
     category: "shoes",
-    liveLink: "https://selectwithease-app.vercel.app/",
+    cartLink: "",
     price: 250,
   },
   {
@@ -228,8 +228,7 @@ const Items = [
     description:
       "Our durable pants provide comfortable support for every movement, whether you're working in a factory, warehouse, or auto shop. Featuring a flexible waistband and a full crotch gusset, they enhance your range of motion, allowing you to move freely. Crafted from premium, genuine jeans fabric, these pants offer a superior fit that accentuates your unique style and elegance. Made from high-quality materials, they are suitable for all seasons, ensuring both durability and sophistication in your attire.",
     category: "trouser",
-    liveLink: "https://space-tourism-alpha.vercel.app/",
-    codeLink: "https://github.com/darmhey/space-tourism",
+    cartLink: "",
     price: 120,
 
   },
@@ -258,8 +257,7 @@ const Items = [
     description:
       "Material: oxfordInner material: polyesterGender: womenColor: backpack",
     category: "bag",
-    liveLink: "https://space-tourism-alpha.vercel.app/",
-    codeLink: "https://github.com/darmhey/space-tourism",
+    cartLink: "",
     price: 80,
   },
   {
@@ -284,7 +282,7 @@ const Items = [
     description:
       "Women Floppy Sun Hat Wide Brim Foldable Summer Beach Straw Cap With Shell Chain ",
     category: "hat",
-    liveLink: "https://space-tourism-alpha.vercel.app/",
+    cartLink: "",
     price: 100,
   },
   {
@@ -316,7 +314,7 @@ const Items = [
     description:
       "The concept is designed to suit the very desire of having most of our everyday motivations in a simple, handy, convenient, comfortable and easy to handle wear.Kindly include a working and active phone number while ordering for easy and fast delivery. ",
     category: "gown",
-    liveLink: "https://space-tourism-alpha.vercel.app/",
+    cartLink: "",
     price: 105.5,
   },
   {
@@ -346,7 +344,7 @@ const Items = [
     description:
       "Belts can help you make a wonderful impression on everyone.This classic menswear belt adds a modern touch to every look, both business and casual.A classic black or brown dress belt, perfect for everyday, business meetings, or for weddings, fashion, and any occasion where you want to look perfect, the belt is individually packaged.For all: casual, wearable, stylish, classic, versatile, perfect for work, sports, special occasions, outdoor activities, work interviews or special events.",
     category: "belt",
-    liveLink: "https://space-tourism-alpha.vercel.app/",
+    cartLink: "",
     price: 45,
   },
 ];

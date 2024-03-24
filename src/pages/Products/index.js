@@ -123,7 +123,7 @@ const Product = () => {
         {location.pathname === "/" && (
           <div className="mt-4 text-right">
             <Link
-              to="/project"
+              to="/product"
               className="text-2xl hover:text-primary duration-300"
             >
               <button className="primary-button">
