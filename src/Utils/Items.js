@@ -269,6 +269,32 @@ const Items = [
     codeLink: "https://github.com/darmhey/space-tourism",
     price: 80,
   },
+  {
+    id: 10,
+    mainImage: "https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/94/816468/1.jpg?6003",
+    img: [
+      "https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/94/816468/1.jpg?6003",
+      "https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/94/816468/2.jpg?6003"
+    ],
+    features: [
+      "Material: Straw",
+      "Color: Sky Blue, Pink, Navy, Khaki, Yellow",
+      "Size: One Size"
+    ],
+    specifications: [
+      "Head circumference: 55cm-58cm(21.65in-22.83in)",
+      "Hat depth: 11cm(4.33in)",
+      "Brim size: 15cm(5.91in)",
+      "Quantity: 1 p"
+    ],
+    name: "Women oversized beach straw hat foldable summer hat",
+    description:
+      "Women Floppy Sun Hat Wide Brim Foldable Summer Beach Straw Cap With Shell Chain ",
+    category: "hat",
+    liveLink: "https://space-tourism-alpha.vercel.app/",
+    codeLink: "https://github.com/darmhey/space-tourism",
+    price: 100,
+  },
 ];
 
 export default Items;

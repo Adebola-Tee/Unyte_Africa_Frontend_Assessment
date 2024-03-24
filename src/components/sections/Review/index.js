@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import { FaQuoteLeft } from "react-icons/fa";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import "./Testimonial.css";
+import "./Review.css";
 import Reviews from "../../../Utils/Reviews";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -13,7 +13,7 @@ import {
 } from "../../../hooks/useAnimation";
 import  BottomLine  from "../../atoms/BottomLine";
 
-const Testimonial = () => {
+const Review = () => {
   const [ref, inView] = useInView();
   const [viewDiv, setViewDiv] = useState(false);
   const animation = useAnimation();
@@ -91,7 +91,7 @@ const Testimonial = () => {
                   <img
                     src={review.img}
                     alt="client"
-                    className="inline-block w-16 h-16 -mt-10 bg-white rounded-full"
+                    className="inline-block w-16 h-16 -mt-10 bg-white rounded-full object-cover"
                   />
                 </div>
               </div>
@@ -103,4 +103,4 @@ const Testimonial = () => {
   );
 };
 
-export default Testimonial;
+export default Review;

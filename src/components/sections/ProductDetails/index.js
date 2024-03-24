@@ -8,7 +8,7 @@ import { FaLink, FaCode } from "react-icons/fa";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import placeholderImage from "../../../assets/placeholder.jpg";
 
-const ProjectDetails = () => {
+const ProductDetails = () => {
   const { id } = useParams();
   const [item, setItem] = useState();
   useEffect(() => {
@@ -102,4 +102,4 @@ const ProjectDetails = () => {
   );
 };
 
-export default ProjectDetails;
+export default ProductDetails;

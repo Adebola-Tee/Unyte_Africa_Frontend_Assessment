@@ -1,13 +1,13 @@
 import React from "react";
 import Product from "../Products";
 import Contact from "../Contact";
-import Testimonial from "../../components/sections/Testimonial"
+import Review from "../../components/sections/Review"
 
 const Home = () => {
   return (
     <div className="pt-16">
     <Product/>
-    <Testimonial/>
+    <Review/>
       <Contact />
     </div>
   );

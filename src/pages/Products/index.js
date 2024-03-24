@@ -107,7 +107,7 @@ const Product = () => {
                       {item.name}
                     </h3>
                     <Link
-                      to={`/project/${item.id}`}
+                      to={`/product/${item.id}`}
                       className="mt-3 inline-block"
                     >
                       <button className="btn btn-sm border-2 border-transparent bg-primary hover:bg-transparent text-white hover:border-primary duration-500">
