@@ -31,6 +31,7 @@ const Items = [
     category: "Trouser",
     liveLink: "https://space-tourism-alpha.vercel.app/",
     codeLink: "https://github.com/darmhey/space-tourism",
+    price: 59,
   },
   {
     id: 2,
@@ -44,7 +45,7 @@ const Items = [
       "Best Quality Material",
       "Trendy & Exquisite",
       "Stylish & Glamorous",
-      "Perfect Fitting & Comfortable"      
+      "Perfect Fitting & Comfortable"
     ],
     specifications: [
       "SKU: DO974MW18THGWNAFAMZ",
@@ -59,6 +60,7 @@ const Items = [
     category: "Trouser",
     liveLink: "https://firebase-authentication-orcin.vercel.app/",
     codeLink: "https://github.com/Adebola-Tee/Firebase-Authentication",
+    price: 79,
   },
   {
     id: 3,
@@ -94,6 +96,7 @@ const Items = [
     category: "bag",
     liveLink: "https://my-frontend-portfolio-gold.vercel.app/",
     codeLink: "https://github.com/Adebola-Tee/My_Frontend_Portfolio",
+    price: 120,
   },
   {
     id: 4,
@@ -126,6 +129,7 @@ const Items = [
     category: "skirt",
     liveLink: "https://selectwithease-app.vercel.app/",
     codeLink: "https://github.com/Adebola-Tee/Selectwithease-app",
+    price: 90,
   },
   {
     id: 5,
@@ -150,6 +154,7 @@ const Items = [
     category: "personal",
     liveLink: "https://selectwithease-app.vercel.app/",
     codeLink: "https://github.com/Adebola-Tee/Selectwithease-app",
+    price: 110,
   },
   {
     id: 6,
@@ -174,6 +179,7 @@ const Items = [
     category: "personal",
     liveLink: "https://selectwithease-app.vercel.app/",
     codeLink: "https://github.com/Adebola-Tee/Selectwithease-app",
+    price: 88.5,
   },
   {
     id: 7,
@@ -198,6 +204,7 @@ const Items = [
     category: "shoes",
     liveLink: "https://selectwithease-app.vercel.app/",
     codeLink: "https://github.com/Adebola-Tee/Selectwithease-app",
+    price: 250,
   },
   {
     id: 8,
@@ -230,6 +237,8 @@ const Items = [
     category: "trouser",
     liveLink: "https://space-tourism-alpha.vercel.app/",
     codeLink: "https://github.com/darmhey/space-tourism",
+    price: 120,
+
   },
   {
     id: 9,
@@ -252,12 +261,13 @@ const Items = [
       "Color: Black",
       "Main Material: Oxford"
     ],
-    name: "Casual Women Backpack Oxford Waterproof Shoulder Bag",
+    name: "Casual Women Backpack Oxford Waterproof  Bag",
     description:
       "Material: oxfordInner material: polyesterGender: womenColor: backpack",
     category: "bag",
     liveLink: "https://space-tourism-alpha.vercel.app/",
     codeLink: "https://github.com/darmhey/space-tourism",
+    price: 80,
   },
 ];
 

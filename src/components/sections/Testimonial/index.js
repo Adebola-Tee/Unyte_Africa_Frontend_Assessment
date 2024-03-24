@@ -59,9 +59,9 @@ const Testimonial = () => {
         animate={viewDiv && "visible"}
         variants={headingAnimation}
       >
-        <h3 className="text-center text-neutral">Testimonials From My Past Internships</h3>
+        <h3 className="text-center text-neutral">What our customers say about us</h3>
         <h1 className="text-4xl font-semibold text-center text-primary">
-          Testimonials
+         Reviews
         </h1>
         <BottomLine />
       </motion.div>

@@ -5,14 +5,14 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Link, useLocation } from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
-import "./Project.css";
+import "./Products.css";
 import {
   headingAnimation,
   sectionBodyAnimation,
 } from "../../hooks/useAnimation";
 import BottomLine from "../../components/atoms/BottomLine";
 
-const Project = () => {
+const Product = () => {
   const [searchItem, setSearchItem] = useState('');
   const [items, setItems] = useState(Items);
 
@@ -32,7 +32,7 @@ const Project = () => {
     }
   }, [inView, animation, location, items]);
 
-const SearchedItem = (e) => {
+  const SearchedItem = (e) => {
     const keyword = e.target.value.toLowerCase().trim();
     setSearchItem(keyword);
     const filteredItems = Items.filter((item) =>
@@ -46,15 +46,14 @@ const SearchedItem = (e) => {
   };
 
   return (
-    <div className={`${location.pathname !== "/" && "pt-16"}`}>
-
-    <div>
-    <SearchBar
-    searchItem = {searchItem}
-    SearchedItem ={SearchedItem}
-    setSearchItem={setSearchItem}
-    ResetItem = {ResetItem}
-    />
+    <div className={`${location.pathname !== "/" && "pt-16"} mt-16`}>
+      <div>
+        <SearchBar
+          searchItem={searchItem}
+          SearchedItem={SearchedItem}
+          setSearchItem={setSearchItem}
+          ResetItem={ResetItem}
+        />
       </div>
       <div className="parent py-12">
         <motion.div
@@ -79,7 +78,6 @@ const SearchedItem = (e) => {
           animate={viewDiv && "visible"}
           variants={sectionBodyAnimation}
         >
-
           {/* Items Card */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {items.map((item) => (
@@ -92,15 +90,18 @@ const SearchedItem = (e) => {
                   transition: { duration: 0.3 },
                 }}
                 key={item.id}
-                className="item-container rounded-lg shadow-lg p-3 flex flex-col justify-between hover:shadow-primary duration-500"
+                className="item-container rounded-lg shadow-lg relative overflow-hidden"
                 style={{ backgroundColor: "#313131" }}
               >
                 <div className="item h-full">
                   <img
-                    className="rounded-lg h-full w-full"
+                    className="rounded-lg h-full w-full object-cover"
                     src={item.mainImage}
                     alt={item.name || "Item Image"}
                   />
+                  <div className="price-overlay absolute top-2 right-2 p-2 bg-black text-white rounded-lg">
+                    <p>${item.price}</p>
+                  </div>
                   <div className="overlay">
                     <h3 className="text-2xl text-primary font-semibold">
                       {item.name}
@@ -139,4 +140,4 @@ const SearchedItem = (e) => {
   );
 };
 
-export default Project;
+export default Product;

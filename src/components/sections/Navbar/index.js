@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import '../Navbar/Navbar.css';
 import { Link, NavLink } from "react-router-dom";
 import {
   RiMenu3Fill,
@@ -6,23 +7,22 @@ import {
 } from "react-icons/ri";
 import { GiCrossMark } from "react-icons/gi";
 import { FaHome } from "react-icons/fa";
-import { MdWork } from "react-icons/md";
-import { ImBlog } from "react-icons/im";
+import { MdShoppingCart, MdWork } from "react-icons/md";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import "../../../pages/shared/Shared.css";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
   };
 
   const navLinks = [
     { title: "Home", link: "/", icon: <FaHome /> },
-    { title: "Project", link: "/project", icon: <MdWork /> },
+    { title: "Products", link: "/product", icon: <MdWork /> },
     { title: "Contact", link: "/contact", icon: <RiContactsBook2Fill /> },
-    { title: "Blog", link: "/blog", icon: <ImBlog /> },
+    { title: "Cart", link: "/cart", icon: <MdShoppingCart /> },
   ];
   const activeLink = ({ isActive }) => {
     return {
@@ -31,39 +31,24 @@ export default function Navbar() {
     };
   };
 
-  // Show Navbar on Scroll UP
-  const [show, setShow] = useState(false);
-  const [lastScrollY, setLastScrollY] = useState(0);
-  useEffect(() => {
-    const controlNavbar = () => {
-      if (typeof window !== "undefined") {
-        if (window.scrollY > lastScrollY) {
-          setShow(true);
-        } else {
-          setShow(false);
-        }
-        setLastScrollY(window.scrollY);
-      }
-    };
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", controlNavbar);
-      return () => {
-        window.removeEventListener("scroll", controlNavbar);
-      };
-    }
-  }, [lastScrollY]);
 
   return (
     <div
-      className={`visible ${show && "nav-hidden"} shadow-lg bg-[#313131] 
+      className={` fixed-navbar visible  shadow-lg bg-[#313131]
      z-50`}
     >
       <div className="w-full flex items-center justify-between px-3 md:px-24 py-3">
         <div>
           <Link to="/">
-            <h1 className="text-2xl text-primary font-lobster">Taiwo Oloyede</h1>
+            <h1 className="text-2xl text-primary font-lobster">U.Mall</h1>
           </Link>
         </div>
+{/*         <SearchBar
+          searchItem={searchItem}
+          setSearchItem={setSearchItem}
+          SearchedItem={SearchedItem}
+          ResetItem={ResetItem}
+  /> */}
         <div>
           <ul className="lg:flex items-center hidden">
             {navLinks.map((navItem) => (
@@ -71,10 +56,12 @@ export default function Navbar() {
                 <NavLink
                   to={navItem.link}
                   style={activeLink}
-                  className="text-white hover:text-primary transition duration-300"
+                  className="text-white hover:text-primary transition duration-300 flex justify-center items-center"
                 >
-                  {navItem.title}
+                <span>{navItem.title}</span>
+                 <span className="ml-2">{navItem.icon}</span>
                 </NavLink>
+               
               </li>
             ))}
           </ul>
